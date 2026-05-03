@@ -49,7 +49,7 @@ export default function Navbar() {
           "
         >
           <Link href="/" onClick={() => setMenuOpen(false)} aria-label="Home">
-              <Image src="/logo.svg" alt="Abhishek Srivastava" width={36} height={36} priority />
+              <Image src="/image/logo.svg" alt="Abhishek Srivastava" width={36} height={36} priority />
             </Link>
 
           {/* Desktop nav */}
