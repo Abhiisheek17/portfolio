@@ -80,8 +80,8 @@ export default function ProjectsSection() {
           My Work
         </h2>
         <h3 className="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
-          It's not just work.{" "}
-          <span className="text-foreground/60">It's how I think.</span>
+          It&apos;s not just work.{" "}
+          <span className="text-foreground/60">It&apos;s how I think.</span>
         </h3>
       </div>
 

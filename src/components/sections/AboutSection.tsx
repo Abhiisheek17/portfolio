@@ -37,9 +37,9 @@ export default function AboutSection() {
             <p>
               I started my journey with a deep curiosity for how systems operate under the hood.
               As a Product & UX Designer, my philosophy is grounded in creating structure out of ambiguity.
-              Whether it's re-thinking a checkout flow to reduce friction, or architecting a real-time
+              Whether it&apos;s re-thinking a checkout flow to reduce friction, or architecting a real-time
               streaming dashboard, I prioritize clarity and scalable product thinking over fleeting trends.
-              When I'm not pushing pixels, I'm probably analyzing the user flows of everyday objects or
+              When I&apos;m not pushing pixels, I&apos;m probably analyzing the user flows of everyday objects or
               finding new ways to simplify complex problems.
             </p>
           </div>

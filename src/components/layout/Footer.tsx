@@ -10,12 +10,12 @@ export default function Footer() {
           {/* Left */}
           <div className="flex-1 space-y-4 text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-semibold text-white leading-tight">
-              Let's <br />
+              Let&apos;s <br />
               <span className="text-primary">Connect</span>
             </h2>
 
             <p className="text-white/70 text-sm md:text-base leading-relaxed max-w-md mx-auto md:mx-0">
-              I'm always open to conversations around design and building meaningful work.
+              I&apos;m always open to conversations around design and building meaningful work.
               Connect via LinkedIn, Dribbble, or email.
             </p>
           </div>
