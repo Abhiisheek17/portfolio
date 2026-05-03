@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import NavLinks from "@/components/layout/NavLinks";
 import { X, Menu } from "lucide-react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [show, setShow] = useState(true);
@@ -47,13 +48,9 @@ export default function Navbar() {
             shadow-sm
           "
         >
-          <Link
-            href="/"
-            className="font-medium text-sm tracking-tight text-black"
-            onClick={() => setMenuOpen(false)}
-          >
-            Abhishek Srivastava
-          </Link>
+          <Link href="/" onClick={() => setMenuOpen(false)} aria-label="Home">
+              <Image src="/logo.svg" alt="Abhishek Srivastava" width={36} height={36} priority />
+            </Link>
 
           {/* Desktop nav */}
           <nav className="hidden md:block">
