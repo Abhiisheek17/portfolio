@@ -10,27 +10,27 @@ export function middleware(request: NextRequest) {
   response.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
 
   // Basic bot filtering
-  const userAgent = request.headers.get("user-agent") || "";
+  // const userAgent = request.headers.get("user-agent") || "";
 
-  const blockedBots = [
-    "Bytespider",
-    "SemrushBot",
-    "MJ12bot",
-    "DotBot",
-    "AhrefsBot",
-  ];
+  // const blockedBots = [
+  //   "Bytespider",
+  //   "SemrushBot",
+  //   "MJ12bot",
+  //   "DotBot",
+  //   "AhrefsBot",
+  // ];
 
-  const isBlocked = blockedBots.some((bot) =>
-    userAgent.includes(bot)
-  );
+//   const isBlocked = blockedBots.some((bot) =>
+//     userAgent.includes(bot)
+//   );
 
-  if (isBlocked) {
-    return new NextResponse("Blocked", { status: 403 });
-  }
+//   if (isBlocked) {
+//     return new NextResponse("Blocked", { status: 403 });
+//   }
 
-  return response;
-}
+//   return response;
+// }
 
-export const config = {
-  matcher: "/:path*",
-};
+// export const config = {
+//   matcher: "/:path*",
+// };
