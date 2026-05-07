@@ -3,8 +3,9 @@ import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Analytics } from "@vercel/analytics/react";
-
 export const metadata: Metadata = {
+  metadataBase: new URL("https://abhisheksrivastava.design"),
+
   title: "Abhishek Srivastava",
 
   description:
@@ -12,20 +13,25 @@ export const metadata: Metadata = {
 
   manifest: "/favicon/site.webmanifest",
 
-icons: {
-  icon: [
-    { url: "/favicon/favicon.ico" },
-    { url: "/favicon/favicon.svg", type: "image/svg+xml" },
-    { url: "/favicon/favicon-96x96.png", sizes: "96x96", type: "image/png" },
-  ],
+  icons: {
+    icon: [
+      { url: "/favicon/favicon.ico" },
+      { url: "/favicon/favicon.svg", type: "image/svg+xml" },
+      {
+        url: "/favicon/favicon-96x96.png",
+        sizes: "96x96",
+        type: "image/png",
+      },
+    ],
 
-  apple: "/favicon/apple-touch-icon.png",
+    apple: "/favicon/apple-touch-icon.png",
 
-  shortcut: "/favicon/favicon.ico",
-},
+    shortcut: "/favicon/favicon.ico",
+  },
 
   openGraph: {
     title: "Abhishek Srivastava",
+
     description:
       "I design systems that solve real user problems. Portfolio of Abhishek Srivastava.",
 
@@ -54,25 +60,6 @@ icons: {
     description:
       "I design systems that solve real user problems. Portfolio of Abhishek Srivastava.",
 
-    images: ["https://abhisheksrivastava.design/og-image.png"],
+    images: ["/og-image.png"],
   },
 };
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body className="antialiased bg-grid font-sans selection:bg-primary/30 min-h-screen flex flex-col relative">
-        <div className="particles-container"></div>
-        <Navbar />
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer />
-        <Analytics />
-      </body>
-    </html>
-  );
-}
