@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-main.png",
         width: 1200,
         height: 630,
         alt: "Abhishek Srivastava Portfolio",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     description:
       "I design systems that solve real user problems. Portfolio of Abhishek Srivastava.",
 
-    images: ["/og-image.png"],
+    images: ["/og-main.png"],
   },
 };
 
