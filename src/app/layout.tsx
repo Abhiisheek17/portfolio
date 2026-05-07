@@ -54,7 +54,7 @@ icons: {
     description:
       "I design systems that solve real user problems. Portfolio of Abhishek Srivastava.",
 
-    images: ["/og-image.png"],
+    images: ["https://abhisheksrivastava.design/og-image.png"],
   },
 };
 export default function RootLayout({
